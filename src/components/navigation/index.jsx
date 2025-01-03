@@ -13,7 +13,7 @@ const Navigation = () => {
           const radius = "calc(20vw - 1rem)";
           const x = `calc(${radius}*${Math.cos(angleRad)})`;
           const y = `calc(${radius}*${Math.sin(angleRad)})`;
-          console.log(index, angleRad, x, y);
+          // console.log(index, angleRad, x, y);
           return <NavButton key={btn.label} x={x} y={y} {...btn} />;
         })}
       </div>
