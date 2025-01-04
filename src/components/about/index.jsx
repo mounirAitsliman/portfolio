@@ -41,6 +41,46 @@ const AboutDetails = () => {
             <sub className="font-semibold text-base">years of experience</sub>
           </p>
         </ItemLayout>
+        <ItemLayout className={"col-span-4 !p-0"}>
+          <img
+            className="w-full h-auto"
+            src="https://github-readme-stats.vercel.app/api/top-langs?username=mounirAitsliman&theme=transparent&title_color=FEFE5B&hide_border=true&text_color=FFFFFF&text_bold=false"
+            alt="Mounir Ait Sliman"
+            loading="lazy"
+          />
+        </ItemLayout>
+        <ItemLayout className={"col-span-8 !p-0"}>
+          <img
+            className="w-full h-auto"
+            src="https://github-readme-stats.vercel.app/api?username=mounirAitsliman&theme=transparent&title_color=FEFE5B&hide_border=true&text_color=FFFFFF&text_bold=false"
+            alt="Mounir Ait Sliman"
+            loading="lazy"
+          />
+        </ItemLayout>
+        <ItemLayout className={"col-span-full !p-0"}>
+          <img
+            className="w-full h-auto"
+            src="https://skillicons.dev/icons?i=java,spring,ts,js,angular,react,html,css,graphql,kafka,npm,maven,figma,idea,vscode,kubernetes,docker,aws,linux,windows,bash,github,gitlab,postman,nodejs,mysql,postgres,mongodb,py,redis,cpp"
+            alt="Mounir Ait Sliman"
+            loading="lazy"
+          />
+        </ItemLayout>
+        <ItemLayout className={"col-span-6 !p-0"}>
+          <img
+            className="w-full h-auto"
+            src="https://github-readme-streak-stats.herokuapp.com?user=mounirAitsliman&theme=dark&hide_border=true&type=png&background=220C0C00&ring=FEFE5B&currStreakNum=FEFE5B"
+            alt="mounirAitsliman"
+            loading="lazy"
+          />
+        </ItemLayout>
+        <ItemLayout className={"col-span-6 !p-0"}>
+          <img
+            className="w-full h-auto"
+            src="https://github-readme-stats.vercel.app/api/pin/?username=mounirAitsliman&repo=TransfertNationalBackend&theme=transparent&title_color=FEFE5B&hide_border=true&text_color=FFFFFF&text_bold=false&description_lines_count=2"
+            alt="mounirAitsliman"
+            loading="lazy"
+          />
+        </ItemLayout>
       </div>
     </section>
   );
