@@ -9,7 +9,7 @@ const HomeBtn = () => {
       className="text-foreground  rounded-full flex items-center justify-center 
       aria-label={home} 
       name={home} 
-        cusom-bg fixed top-4 left-4 w-fit self-start"
+        cusom-bg fixed top-4 left-4 w-fit self-start z-50"
     >
       <span className="relative peer w-14 h-14 p-4 hover:text-accent">
         <Home className="w-full h-auto" strokeWidth={1.5}></Home>
