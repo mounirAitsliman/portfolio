@@ -13,6 +13,7 @@ import Link from "next/link";
 import React from "react";
 import ResponsiveComponent from "../ResponsiveComponent";
 import clsx from "clsx";
+import { motion } from "framer-motion";
 
 const getIcon = (icon) => {
   switch (icon) {
@@ -36,6 +37,11 @@ const getIcon = (icon) => {
       return <Home className="w-full h-auto" strokeWidth={1.5} />;
   }
 };
+const item = {
+  hidden: { scale: 0 },
+  show: { scale: 1 },
+};
+const NavLink = motion(Link);
 const NavButton = ({
   x,
   y,
@@ -53,7 +59,8 @@ const NavButton = ({
             className=" absolute cursor-pointer z-50"
             style={{ transform: `translate(${x}, ${y})` }}
           >
-            <Link
+            <NavLink
+              variants={item}
               href={link}
               target={newTab ? "_blank" : "_self"}
               className="text-foreground  rounded-full flex items-center justify-center aria-label={label} name={label} 
@@ -69,11 +76,12 @@ const NavButton = ({
                   {label}
                 </span>
               </span>
-            </Link>
+            </NavLink>
           </div>
         ) : (
           <div className="w-fit cursor-pointer z-50">
-            <Link
+            <NavLink
+              variants={item}
               href={link}
               target={newTab ? "_blank" : "_self"}
               className="text-foreground  rounded-full flex items-center justify-center aria-label={label} name={label} 
@@ -91,7 +99,7 @@ const NavButton = ({
                   {label}
                 </span>
               </span>
-            </Link>
+            </NavLink>
           </div>
         );
       }}
